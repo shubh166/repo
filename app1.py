@@ -1,4 +1,4 @@
-print("hello HCL6")
+print("hello HCLite")
 
 
 
