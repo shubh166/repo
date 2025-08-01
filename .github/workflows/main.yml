@@ -16,10 +16,6 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Build with Maven
-      run: mvn clean install
     - name: Run the Java application
-      run: java -jar shubham.jar
+      run: javac shubham.java
 
