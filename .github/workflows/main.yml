@@ -16,4 +16,4 @@ jobs:
        uses: actions/setup-java@v3.14.1
 
      - name: Run Java app
-       run: Java app1.java
+       run: Java Main.java
