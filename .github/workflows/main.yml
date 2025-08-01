@@ -1,19 +1,23 @@
-name: CI Pipeline
+name: Java CI
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
- execute:
-   runs-on: ubuntu-latest
-
-   steps: 
-     - name: Checkout
-       uses: actions/checkout@v4.2.2
-
-     - name: Setup Java JDK
-       uses: actions/setup-java@v3.14.1
-
-     - name: Run Java app
-       run: Java Main.java
+  build-and-run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+      run: mvn clean install
+    - name: Run the Java application
+      run: java -jar shubham.jar
