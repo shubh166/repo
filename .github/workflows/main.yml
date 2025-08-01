@@ -12,8 +12,8 @@ jobs:
      - name: Checkout
        uses: actions/checkout@v4.2.2
 
-     - name: Setup Python
-       uses: actions/setup-python@v5.6.0
+     - name: Setup Java JDK
+       uses: actions/setup-java@v3.14.1
 
-     - name: Run python app
-       run: python app1.py
+     - name: Run Java app
+       run: Java app1.java
