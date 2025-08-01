@@ -7,8 +7,8 @@ class shubham1 {
     int sum=a+b;
     System.out.println("Sum is: "+sum);
 }
-  static void String(String a, String b){
-    String sum = a+b;
+  static void login(String a, String b){
+    String sum=a+b;
     System.out.println("Sum is :"+sum);
 }
 }
