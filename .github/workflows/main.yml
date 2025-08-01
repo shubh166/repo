@@ -7,15 +7,12 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-run:
+  execute:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
       with:
-        java-version: '17'
-    - name: Run the Java application
-      run: javac shubham.java
-
+       distribution: 'zulu' # See 'Supported distributions' for available options
+       java-version: '21'
+    - run: java shubham1.java
