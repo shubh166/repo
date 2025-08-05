@@ -12,6 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-java@v4
+    - name: CodeThreat Scanner
+      uses: CodeThreat/codethreat-github-action@v1.026
       with:
        distribution: 'zulu' # See 'Supported distributions' for available options
        java-version: '21'
