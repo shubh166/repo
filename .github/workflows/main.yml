@@ -3,6 +3,7 @@
 
     on: [push] # Triggers the workflow on every push to the repository
 
+
     jobs:
       build-and-run:
         runs-on: ubuntu-latest # Specifies the runner environment
@@ -21,3 +22,4 @@
 
           - name: Run Java code
             run: java shubham1 # Executes the compiled Java class
+
