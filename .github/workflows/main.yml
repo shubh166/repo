@@ -20,4 +20,4 @@
             run: javac shubham1.java # Compiles the Java file
 
           - name: Run Java code
-            run: java HelloWorld # Executes the compiled Java class
+            run: java shubham1 # Executes the compiled Java class
