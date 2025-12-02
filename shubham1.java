@@ -1,6 +1,6 @@
 class shubham1 {
   public static void main(String[] args){
-    login(20,30);
+    login(20,100);
     login("Shubham", " can build java program");
 }
   static void login(int a, int b){
