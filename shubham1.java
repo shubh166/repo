@@ -12,4 +12,3 @@ class shubham1 {
     System.out.println("Sum is :"+sum);
 }
 }
-//This is method overloading which is a example of compile time polymorphism
